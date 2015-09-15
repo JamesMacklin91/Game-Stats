@@ -1,0 +1,49 @@
+//Game Stats
+//Demonstrates declaring and initialising variables
+//created by James Macklin
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int score;
+	double distance;
+	char playAgain;
+	bool shieldsUp;
+
+	//short type modifies int so that it reduces the number of values it can hold
+	short lives, aliensKilled;
+
+	score = 0;
+	distance = 1200.76;
+	playAgain = 'y';
+	shieldsUp = true;
+	lives = 3;
+	aliensKilled = 10;
+
+	double engineTemp = 6572.89;
+
+	//\n, when passes to cout, is an escape sequence. In this case it acts the same as pressing enter in the console window
+	cout << "\nscore: " << score << endl;
+	cout << "distance:" << distance << endl;
+	cout << "playAgain:" << playAgain << endl;
+	cout << "lives:" << lives << endl;
+	cout << "aliensKilled:" << aliensKilled << endl;
+	cout << "engineTemp:" << engineTemp << endl;
+
+	int fuel;
+	cout << "\nHow much fuel?";
+	//cin will recieve a value from the user and feed it to fuel
+	cin >> fuel;
+	cout << "fuel:" << fuel << endl;
+
+	//here we define the idenitifier ushort as another name for unsigned short int types
+	//so typedef followed by original type name followed by new type name defines the new name
+	//very useful for types with long names
+	typedef unsigned short int ushort;
+	ushort bonus = 10;
+	cout << "\nbonus:" << bonus << endl;
+
+	return 0;
+}
